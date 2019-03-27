@@ -13,13 +13,9 @@ class Radios extends Component {
   }
 
   handleClick(e, station) {
-    console.log("onclick!")
-    if (this.state.selectedStation === station) {
-      this.setState({ selectedStation: null })
-    } else { 
-      this.setState({ selectedStation: station })
-    }
-    console.log(this.state.selectedStation)
+    (this.state.selectedStation === station) 
+    ? this.setState({ selectedStation: null })
+    : this.setState({ selectedStation: station })
   }
   
   render() {
