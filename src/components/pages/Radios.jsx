@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import api from '../../api';
 import RadioListItem from '../RadioListItem';
-// import './Radios.css';
 
 class Radios extends Component {
   constructor(props) {
