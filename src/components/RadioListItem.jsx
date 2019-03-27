@@ -8,9 +8,9 @@ class RadioListItem extends Component {
       <div className="radio-item">
         {this.props.selectedStation && (this.props.selectedStation === this.props.station) &&
           <div className="extended">
-            {/* <i className="fa fa-minus-circle"></i>       */}
+            <i className="fa fa-minus-circle"></i>      
             <img src={this.props.selectedStation.image} alt="radioimage" />
-            {/* <i className="fa fa-plus-circle"></i> */}
+            <i className="fa fa-plus-circle"></i>
           </div>
         }
         {this.props.station && 

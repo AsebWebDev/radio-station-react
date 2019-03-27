@@ -12,8 +12,9 @@ class Radios extends Component {
   }
 
   handleClick(e, station) {
+    e.preventDefault();
     (this.state.selectedStation === station) 
-    ? this.setState({ selectedStation: null })
+    ? this.setState({ selectedStation: null }) // toggle extended view, when already extended
     : this.setState({ selectedStation: station })
   }
   
@@ -48,10 +49,7 @@ class Radios extends Component {
   componentDidMount() {
     api.getRadios()
       .then(stations => {
-        console.log(stations)
-        this.setState({
-          stations: stations.radios
-        })
+        this.setState({ stations: stations.radios })
       })
       .catch(err => console.log(err))
   }
