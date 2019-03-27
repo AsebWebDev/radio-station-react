@@ -4,23 +4,16 @@ ul {
   color: rgb(218, 203, 203);
 }
 
+i {
+  margin: 0 10px;
+}
+
 li {
   list-style:  none;
 }
 
 li:nth-child(n+2) {
   border-top: 1px solid grey;
-}
-
-i {
-  margin: 0 10px;
-}
-
-.App {
-  display: flex;
-  justify-content: center;
-  margin: 50px;
-  font-family: Ubuntu;
 }
 
 .radio-container {
